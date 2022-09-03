@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h1>{{ $t('message') }} Pokemons</h1>
         <b-container>
             <b-row>
                 <b-col>

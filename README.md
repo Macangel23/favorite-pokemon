@@ -1,8 +1,5 @@
 # favorite-pokemon
-List of favorite pokemons
-
-
-# favorite-pokemon
+List of favorite pokemons, Acomo Exam
 
 ## Project setup
 ```
