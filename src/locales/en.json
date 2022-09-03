@@ -1,3 +1,5 @@
 {
-  "message": "Goodmorning"
+  "greet": {
+      "message": "Good Morning"
+  }
 }

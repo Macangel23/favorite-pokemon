@@ -1,3 +1,5 @@
 {
-    "message": "Maganda Umaga"
+    "greet": {
+        "message": "Magandang Umaga"
+    }
 }

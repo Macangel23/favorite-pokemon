@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>{{ $t('message') }} Pokemons</h1>
+        <b-button @click="translate">Transalate</b-button>
+        <h1>{{ $t('greet.message') }} Pokemons</h1>
         <b-container>
             <b-row>
                 <b-col>
@@ -72,6 +73,9 @@ export default {
                 .then(() => {
                     this.showDetails = true
                 }).catch(error => console.log(error));
+        },
+        translate() {
+            this.$root.$i18n.locale = 'tag'
         }
     },
 } 
