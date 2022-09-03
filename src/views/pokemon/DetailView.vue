@@ -4,13 +4,13 @@
             <li>
                 <img :src="pokemonDetails.sprites.front_default" alt="">
             </li>
-            <li>Abilities:
-                <ul v-for="ability in pokemonDetails.abilities" :key="ability">
+            <li>{{ $t('abilities') }}:
+                <ul v-for="ability in pokemonDetails.abilities" :key="ability.name">
                     <li>{{ability.ability.name}}</li>
                 </ul>
             </li>
-            <li>Name: {{ pokemonDetails.name }}</li>
-            <li>Weight: {{ pokemonDetails.weight }}</li>
+            <li>{{ $t('name') }}: {{ pokemonDetails.name }}</li>
+            <li>{{ $t('weight') }}: {{ pokemonDetails.weight }}</li>
         </ul>
     </div>
 </template>

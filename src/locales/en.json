@@ -1,5 +1,10 @@
 {
   "greet": {
       "message": "Good Morning"
-  }
+  },
+  "details": "See Details",
+  "abilities": "Abilities",
+  "name": "Name",
+  "weight": "Weight"
+
 }

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-button @click="translate">Transalate</b-button>
+        <b-button @click="translate($root.$i18n.locale == 'en' ? 'tag' : 'en')">Transalate</b-button>
         <h1>{{ $t('greet.message') }} Pokemons</h1>
         <b-container>
             <b-row>
@@ -14,7 +14,7 @@
                         :current-page="currentPage"
                     >
                         <template #cell(url)="data">
-                            <b-button @click="details(data.value)">See Details</b-button>
+                            <b-button @click="details(data.value)">{{ $t('details') }}</b-button>
                         </template>
                     </b-table>
                     <b-pagination
@@ -74,8 +74,8 @@ export default {
                     this.showDetails = true
                 }).catch(error => console.log(error));
         },
-        translate() {
-            this.$root.$i18n.locale = 'tag'
+        translate(lang) {
+            this.$root.$i18n.locale = lang
         }
     },
 } 

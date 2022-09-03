@@ -1,5 +1,9 @@
 {
     "greet": {
         "message": "Magandang Umaga"
-    }
+    },
+    "details": "Tignan ang Detalye",
+    "abilities": "Abilidad",
+    "name": "Pangalan",
+    "weight": "Bigat"
 }
